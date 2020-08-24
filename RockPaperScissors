@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+public class Kata
+{
+  public string Rps(string p1, string p2)
+  {
+    
+    var outcome = "";
+    
+    switch (p1)
+    {
+      case "scissors":
+        switch (p2)
+          {
+          case "scissors":
+            outcome = "Draw!";
+            break;
+          case "paper":
+            outcome = "Player 1 won!";
+            break;
+          case "rock":
+            outcome = "Player 2 won!";
+            break;
+          default:
+            break;
+          }
+        break;
+      case "paper":
+        switch (p2)
+          {
+          case "scissors":
+            outcome = "Player 2 won!";
+            break;
+          case "paper":
+            outcome = "Draw!";
+            break;
+          case "rock":
+            outcome = "Player 1 won!";
+            break;
+          default:
+            break;
+          }
+        break;
+      case "rock":
+        switch (p2)
+          {
+          case "scissors":
+            outcome = "Player 1 won!";
+            break;
+          case "paper":
+            outcome = "Player 2 won!";
+            break;
+          case "rock":
+            outcome = "Draw!";
+            break;
+          default:
+            break;
+          }
+        break;
+      default:
+        break;
+    }
+    
+    return outcome;
+  }
+}
