@@ -1,0 +1,16 @@
+namespace Converter {
+  public class Converter
+  {
+    public string dnaToRna(string dna)
+    {
+      // make a local equivalent of dna string
+      string testdna = dna;
+      
+      // make a new string with the T's replaced with U's
+      string rna = testdna.Replace('T', 'U');
+      
+      // return the result
+      return rna;
+    }
+  }
+}
