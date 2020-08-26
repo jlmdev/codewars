@@ -1,0 +1,17 @@
+  using System;
+  public static class Clock
+  {
+    public static int Past(int h, int m, int s)
+    {
+      // PEDAC 
+      // Problem:
+      // Given an hours (h), minutes (m), and seconds (s) return the elapsed time 
+      // in milliseconds
+      // Example: 0,1,1 = 61000
+      // Data Structures
+      // I don't expect to need additional data structures
+      // Algorithm:
+      // Add (h * 60 * 60 * 1000) + (m * 60 * 1000) + (s * 1000) and return than value
+      return (h * 60 * 60 * 1000) + (m * 60 * 1000) + (s * 1000);
+    }
+  }
